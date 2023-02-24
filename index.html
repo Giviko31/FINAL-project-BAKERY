@@ -877,3 +877,31 @@
             </div>
         </div>
     </section>
+    <script src="https://kit.fontawesome.com/e7618e124e.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+
+        var swiper = new Swiper(".second_swiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
